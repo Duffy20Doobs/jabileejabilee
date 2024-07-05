@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        .header{
+            width: 100%;
+            height: 80px;
+            display: block;
+            background-color: red;
+            border-bottom: 5px solid orange;
+            position: relative;
+        }
+        .innerheader{
+            height: 100%;
+            width: 1300px;
+            margin: 0 auto;
+            display: block;
+        }
+        .pages{
+            height: 100%;
+            float: right;
+        }
+
+        .pages a{
+            font-family: "Concert One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: large;
+            color: white;
+            display: table;
+            text-decoration: none;
+            margin-top: 10px;
+            padding: 0 30px;
+        }
+        .pages li{
+            display: table-cell;
+            vertical-align: middle;
+
+        }
+        .logon{
+            height: 100%;
+            display: table;
+            float: left;
+        }
+        .joll{
+            font-family: "Concert One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: xx-large;
+            color: white;
+            display: table-cell;
+            vertical-align: middle;
+            text-decoration: none;
+            padding-left: 105px;
+        }
+        .logo{
+            height: 60px;
+            width: 65px;
+            padding-top: 10px;
+        }
+        .ps{
+            margin-right: px;
+        }
+        .btn {
+            float: right;
+            margin-top: 16px;
+            margin-right: 50px;
+            position: relative;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color: #e2a03c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #c97f20;
+        }
+        
+        .home {
+            height: 48vh;
+            width: 100%;
+            background-color: rgb(160, 24, 24);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20.5vh;
+        }   
+        .foot{
+            clear: both;
+            display: flex;
+            background-color: rgb(39, 35, 35);
+            width: 100%;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+        .masc{
+            height: 100px;
+            width: 100px; 
+            margin-right: 10px; 
+
+        }
+        .hotl{
+            font-family: "Concert One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: xx-large;
+            color: white;
+            display: table-cell;
+            vertical-align: middle;
+            text-decoration: none;
+            padding-top: 30px;
+        }
+        .inner1, .inner2, .inner3, .inner4 {
+            border: 2px solid yellow;
+            border-radius: 8%;
+            background-color: white;
+            text-align: center;
+            margin: 10px;
+            height: 300px;
+            width: 200px;
+
+        }
+        .half1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin-top: -195px;
+        }   
+        .chickenjoy, .spag, .BurgerSteak, .palabok, .burger, .chickens, .Fries, .Jollyhot{
+            height: 107px;
+            width: 120px;
+        }
+        .inner5, .inner6, .inner7, .inner8 {
+            border: 2px solid yellow;
+            border-radius: 8%;
+            background-color: white;
+            text-align: center;
+            margin: 10px;
+            height: 300px;
+            width: 200px;
+
+        }
+        .half2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 1;
+        }   
+         .btn7, .btn6{
+            float: right;
+            margin-top: 15px;
+            margin-right: 37px;
+            position: relative;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color: #e2a03c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn2:hover, .btn6:hover .btn7:hover {
+            background-color: #c97f20;
+        }
+        .chickendisc{
+            margin-top: -10px;
+            font-family: "Concert One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: small;
+            color: black;
+            display: table-cell;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+        .btn1, .btn3, .btn4{
+            float: right;
+            margin-top: 40px;
+            margin-right: 37px;
+            position: relative;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color: #e2a03c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn1:hover, .btn3:hover .btn4:hover .btn5:hover .btn8:hover{
+            background-color: #c97f20;
+        }
+        .btn8{
+            float: right;
+            margin-top: 20px;
+            margin-right: 37px;
+            position: relative;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color: #e2a03c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .btn2{
+            float: right;
+            margin-top: 3px;
+            margin-right: 37px;
+            position: relative;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color: #e2a03c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .btn5{
+            float: right;
+            margin-top: 53px;
+            margin-right: 37px;
+            position: relative;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background-color: #e2a03c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        @media only screen and (max-width: 600px) {
+  .pages {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="innerheader">
+            <div class="logon">
+                <a href="https://www.jollibee.com.ph/" class="joll">Jollibee</a>
+                <a href="https://www.jollibee.com.ph/"><img src="https://companieslogo.com/img/orig/JBFCF-f8098eac.png?t=1663487601" class="logo"></a>
+            </div>
+            <a href="https://www.jollibeedelivery.com/home"><input type="button" value="order now" class="btn"></a>
+            <ul class="pages">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="ps">Menu</a></li>
+
+            </ul>
+         </div>
+     </div>
+    <div class="home">
+        <div class="half1">
+            <div class="inner1">
+                <img src="https://www.jollibeefoods.com/cdn/shop/products/6-pc-chickenjoy-bucket.jpg?v=1635459184" class="chickenjoy">
+                <h1 class="Chickent">Chickenjoy</h1>
+                <p class="chickendisc">A bucket of your favorite crispylicious, juicylicious Chickenjoy!</p>
+                <a href="https://www.jollibee.com.ph/menu/chickenjoy/"><input type="button" value="order now" class="btn1"></a>
+            </div>
+            <div class="inner2">
+                <img src="https://queen.jollibee.com.ph/2022/01/Jolly-Spaghetti-Family-Pan-1.png" class="spag">
+                <h1 class="Chickent">Jolly Spaghetti</h1>
+                <p class="chickendisc">Your meatiest, cheesiest and sweet-sarap Jolly Spaghetti Family Pan.</p>
+                <a href="https://www.jollibee.com.ph/menu/jolly-spaghetti/"></a><input type="button" value="order now" class="btn2"></a>
+            </div>
+            <div class="inner3">
+                <img src="https://www.jollibeefoods.com/cdn/shop/products/Burgersteak-Family-Pack_600x480px.jpg?v=1632360822" class="BurgerSteak">
+                <h1 class="Chickent">Burger Steak</h1>
+                <p class="chickendisc">A platter of beef patties with flavorful mushroom gravy topped with mushroom slices.</p>
+                <a href="https://www.jollibee.com.ph/menu/chickenjoy/"></a><input type="button" value="order now" class="btn3"></a>
+            </div>
+            <div class="inner4">
+                <img src="https://queen.jollibee.com.ph/2022/01/Palabok-Family-Pan-1.png" class="palabok">
+                <h1 class="Chickent">Palabok</h1>
+                <p class="chickendisc">Your classic favorite Palabok, saucy-tasty, loaded with toppings, for sharing with the whole family!</p>
+                <a href="https://www.jollibee.com.ph/menu/chickenjoy/"> <input type="button" value="order now" class="btn4"></a>
+            </div>
+        </div>
+        <div class="half2">
+            <div class="inner5">
+                <img src="https://queen.jollibee.com.ph/2022/01/BURGERS.png" class="burger">
+                <h1 class="Chickent">Burgers</h1>
+                <p class="chickendisc">Your favorite beefiest langhap-sarap Jollibee burgers.</p>
+                <a href="https://www.jollibee.com.ph/menu/burgers/"> <input type="button" value="order now" class="btn5"></a>
+            </div>
+            <div class="inner6">
+                <img src="https://queen.jollibee.com.ph/2023/07/JBPH-P-SEOUL-THUMBNAIL_SOLO_ORIGINAL_750X750px_FA-min.png" class="chickens">
+                <h1 class="Chickent">Chicken Sandwich</h1>
+                <p class="chickendisc">Large. Crunch. Spicy Thigh Fillet all in one burgerlike!</p>
+                <a href="https://www.jollibee.com.ph/menu/chickenjoy/"> <input type="button" value="order now" class="btn6"></a>
+            </div>
+            <div class="inner7">
+                <img src="https://queen.jollibee.com.ph/2022/05/Jolly-Crispy-Fries-Bucket-1.png" class="Fries">
+                <h1 class="Chickent">Fries and Sides</h1>
+                <p class="chickendisc">Crispy-sarap fries in every bite and creamy extras.</p>
+                <a href="https://www.jollibee.com.ph/menu/chickenjoy/"> <input type="button" value="order now" class="btn7"></a>
+            </div>
+            <div class="inner8">
+                <img src="https://queen.jollibee.com.ph/2022/01/Cheesy-Classic-Jolly-Hotdog-Solo.png" class="Jollyhot">
+                <h1 class="Chickent">Jolly Hotdog</h1>
+                <p class="chickendisc">Meaty sausage in a soft hotdog bun, topped with a special dressing, grated cheese and tomato catsup,</p>
+                <a href="https://www.jollibee.com.ph/menu/chickenjoy/"> <input type="button" value="order now" class="btn8"></a>
+            </div>
+        </div>
+    </div>
+        <div class="foot">
+            <a href="https://www.jollibeedelivery.com/home" class="hotl">#87000</a>
+            <a href="https://www.jollibeedelivery.com/home"><img src="https://companieslogo.com/img/orig/JBFCF_BIG-6f9dd9a2.png?t=1663487601" class="masc"> </a>
+        </div>
+</body>
